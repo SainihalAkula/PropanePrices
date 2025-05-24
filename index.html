@@ -130,7 +130,7 @@
 					<button class="qty-btn plus">+</button>
 				</div>
 				<div class="price-info">
-					<span class="unit-price">$6.60</span>
+					<span class="unit-price">$6.00</span>
 					<span class="row-total">$0.00</span>
 				</div>
 			</div>
@@ -144,7 +144,7 @@
 					<button class="qty-btn plus">+</button>
 				</div>
 				<div class="price-info">
-					<span class="unit-price">$11.88</span>
+					<span class="unit-price">$10.79</span>
 					<span class="row-total">$0.00</span>
 				</div>
 			</div>
@@ -158,7 +158,7 @@
 					<button class="qty-btn plus">+</button>
 				</div>
 				<div class="price-info">
-					<span class="unit-price">$18.48</span>
+					<span class="unit-price">$16.79</span>
 					<span class="row-total">$0.00</span>
 				</div>
 			</div>
@@ -172,7 +172,7 @@
 					<button class="qty-btn plus">+</button>
 				</div>
 				<div class="price-info">
-					<span class="unit-price">$23.76</span>
+					<span class="unit-price">$21.58</span>
 					<span class="row-total">$0.00</span>
 				</div>
 			</div>
@@ -186,7 +186,7 @@
 					<button class="qty-btn plus">+</button>
 				</div>
 				<div class="price-info">
-					<span class="unit-price">$36.96</span>
+					<span class="unit-price">$33.57</span>
 					<span class="row-total">$0.00</span>
 				</div>
 			</div>
@@ -200,7 +200,7 @@
 					<button class="qty-btn plus">+</button>
 				</div>
 				<div class="price-info">
-					<span class="unit-price">$47.52</span>
+					<span class="unit-price">$43.16</span>
 					<span class="row-total">$0.00</span>
 				</div>
 			</div>
@@ -214,7 +214,7 @@
 					<button class="qty-btn plus">+</button>
 				</div>
 				<div class="price-info">
-					<span class="unit-price">$59.40</span>
+					<span class="unit-price">$53.96</span>
 					<span class="row-total">$0.00</span>
 				</div>
 			</div>
@@ -228,7 +228,7 @@
 					<button class="qty-btn plus">+</button>
 				</div>
 				<div class="price-info">
-					<span class="unit-price">$71.28</span>
+					<span class="unit-price">$64.75</span>
 					<span class="row-total">$0.00</span>
 				</div>
 			</div>
@@ -242,7 +242,7 @@
 					<button class="qty-btn plus">+</button>
 				</div>
 				<div class="price-info">
-					<span class="unit-price">$118.80</span>
+					<span class="unit-price">$107.91</span>
 					<span class="row-total">$0.00</span>
 				</div>
 			</div>
@@ -256,7 +256,7 @@
 					<button class="qty-btn plus">+</button>
 				</div>
 				<div class="price-info">
-					<span class="unit-price">$78.63</span>
+					<span class="unit-price">$76.45</span>
 					<span class="row-total" id="newBottleTotal">$0.00</span>
 				</div>
 			</div>
@@ -266,15 +266,15 @@
 
 		<script>
 			const prices = {
-				5: 6.6,
-				10: 11.88,
-				15: 18.48,
-				20: 23.76,
-				30: 36.96,
-				40: 47.52,
-				50: 59.4,
-				60: 71.28,
-				100: 118.8,
+				5: 6.00,
+				10: 10.79,
+				15: 16.79,
+				20: 21.58,
+				30: 33.57,
+				40: 43.16,
+				50: 53.96,
+				60: 64.75,
+				100: 107.91,
 			};
 
 			function handleQuantityChange(e) {
@@ -313,7 +313,7 @@
 				// New bottle calculation
 				const bottleQty =
 					parseInt(document.getElementById('newBottleQty').value) || 0;
-				const bottleTotal = 78.63 * bottleQty;
+				const bottleTotal = 76.45 * bottleQty;
 				document.getElementById(
 					'newBottleTotal'
 				).textContent = `$${bottleTotal.toFixed(2)}`;
